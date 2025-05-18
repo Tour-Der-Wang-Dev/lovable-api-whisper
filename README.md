@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
 
-## Project info
+# Lovable React Web Application
 
-**URL**: https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f
+**URL**: [https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f](https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f)
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+This project is a modern web application built with React, TypeScript, and Tailwind CSS. It uses the shadcn/ui component library for consistent UI elements and Vite as the build tool for fast development and optimized production builds.
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18.x or higher recommended) - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- npm (included with Node.js)
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Clone the repository:
+   ```sh
+   git clone <YOUR_GIT_URL>
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Navigate to the project directory:
+   ```sh
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-Follow these steps:
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+5. Open your browser and visit:
+   ```
+   http://localhost:8080
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Technology Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Framework**: React 18
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (built on Radix UI primitives)
+- **Build Tool**: Vite
+- **Routing**: React Router Dom
+- **State Management**: React Query
+- **Icons**: Lucide React
+- **Toast Notifications**: Sonner
+- **Data Visualization**: Recharts
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The project follows a feature-based structure:
 
-**Use GitHub Codespaces**
+- `/src/components/ui`: Reusable UI components from shadcn/ui
+- `/src/hooks`: Custom React hooks
+- `/src/lib`: Utility functions and shared logic
+- `/src/pages`: Page components corresponding to routes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+See `filesExplorer.md` for a detailed breakdown of all files in the project.
 
-## What technologies are used for this project?
+## Development
 
-This project is built with:
+### Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+See `scripts.md` for a comprehensive list of all available npm scripts and their usage.
 
-## How can I deploy this project?
+### Code Style
 
-Simply open [Lovable](https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f) and click on Share -> Publish.
+This project uses:
+- ESLint for code linting
+- TypeScript for static type-checking
+- Prettier (via SWC) for consistent code formatting
 
-## Can I connect a custom domain to my Lovable project?
+### Adding New Components
 
-Yes, you can!
+1. For shadcn/ui components, use the installation command:
+   ```sh
+   npx shadcn-ui@latest add [component-name]
+   ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. For custom components, create them in the appropriate feature directory
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Deployment
+
+The application can be deployed through Lovable's built-in deployment system:
+
+1. Open [Lovable](https://lovable.dev/projects/b9740b0a-a304-4c01-814a-7c8a9f46c51f)
+2. Navigate to Share → Publish
+
+## Custom Domains
+
+To connect a custom domain:
+1. Navigate to Project → Settings → Domains in Lovable
+2. Click "Connect Domain"
+3. Follow the instructions to configure your DNS settings
+
+## Contributing
+
+### Branching Strategy
+
+1. Create a feature branch from `main`:
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
+
+2. Make your changes and commit:
+   ```sh
+   git add .
+   git commit -m "feat: description of your changes"
+   ```
+
+3. Push your branch and create a pull request:
+   ```sh
+   git push -u origin feature/your-feature-name
+   ```
+
+### Pull Request Guidelines
+
+- Keep changes focused on a single concern
+- Include clear descriptions of the changes
+- Ensure all tests pass
+- Follow the established code style
+
+## License
+
+This project is licensed under the terms specified in the project repository.
